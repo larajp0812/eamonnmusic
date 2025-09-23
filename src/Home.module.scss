@@ -1,0 +1,87 @@
+.home {
+  font-family: "Baskerville", serif;
+  color: white;
+  background: black;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: url("/images/hero.jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tourDates {
+  padding: 4rem 2rem;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin: 2rem 0;
+      font-size: 1.2rem;
+
+      a {
+        display: inline-block;
+        margin-top: 0.5rem;
+        color: white;
+        text-decoration: underline;
+
+        &:hover {
+          color: gray;
+        }
+      }
+    }
+  }
+}
+
+.videos {
+  padding: 4rem 2rem;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  .carousel {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+
+    iframe {
+      width: 320px;
+      height: 180px;
+      border-radius: 8px;
+      border: none;
+    }
+  }
+}
+
+.bookTickets {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: white;
+  text-decoration: underline;
+  transition: color 0.2s ease-in;
+
+  &:hover {
+    color: gray;
+  }
+}

@@ -1,0 +1,140 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  height: 100px;
+  background: none;
+  display: flex;
+  align-items: center;
+  color: white;
+  z-index: 1000;
+  background-color: black;
+}
+
+.inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainLink {
+  color: white;
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-family: "Baskerville", serif;
+  transition: color 0.2s ease-in;
+
+  &:hover {
+    color: rgb(198, 198, 198);
+    text-decoration: none;
+  }
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: "Baskerville", serif;
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s ease-in;
+
+  &:hover {
+    color: gray;
+  }
+
+  svg {
+    font-size: 1.2rem;
+  }
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.burger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: white;
+}
+
+/* Overlay menu */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  font-family: "Baskerville", serif;
+  transition: color 0.2s ease-in;
+}
+
+.overlay ul {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  transition: color 0.2s ease-in;
+}
+
+.overlay li {
+  margin: 20px 0;
+}
+
+.overlay a {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s ease-in;
+
+  &:hover {
+    color: gray;
+  }
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.socials {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+
+  a {
+    font-size: 1.8rem;
+  }
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .links {
+    display: none;
+  }
+  .burger {
+    display: flex;
+  }
+}
