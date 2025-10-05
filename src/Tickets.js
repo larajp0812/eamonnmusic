@@ -34,7 +34,7 @@ export default function Tickets() {
             <span className={styles.cities}>London</span>
             <br />
             <a
-              href="https://www.irishculture.org/"
+              href="https://irishculturalcentre.co.uk/"
               target="_blank"
               rel="noreferrer"
               className={styles.bookTickets}
