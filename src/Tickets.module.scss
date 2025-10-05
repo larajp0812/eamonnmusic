@@ -3,17 +3,39 @@
   background: black;
   color: white;
   font-family: "Baskerville", serif;
-  padding: 4rem 2rem;
-  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
 
   h1 {
     font-size: 2.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
   }
 
   p {
-    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+  }
+}
+
+.headers {
+  color: white;
+  text-decoration: none;
+  font-size: 2.5rem;
+  font-family: "Baskerville", serif;
+  margin-bottom: 30px;
+}
+
+.tourDates {
+  padding: 0.8rem 2rem;
+  text-align: center;
+  font-family: "Baskerville", serif;
+
+  h2 {
     margin-bottom: 2rem;
+    font-size: 2rem;
+    font-family: "Baskerville", serif;
   }
 
   ul {
@@ -21,18 +43,67 @@
     padding: 0;
 
     li {
-      margin: 1rem 0;
-      font-size: 1.1rem;
+      margin: 2rem 0;
+      font-size: 1.2rem;
+      font-family: "Baskerville", serif;
 
       a {
+        display: inline-block;
+        margin-top: 0.5rem;
         color: white;
-        margin-left: 1rem;
         text-decoration: underline;
+        font-family: "Baskerville", serif;
 
         &:hover {
           color: gray;
+          font-family: "Baskerville", serif;
         }
       }
     }
   }
+}
+
+h2 {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  font-family: "Baskerville", serif;
+}
+
+.bookTickets {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: white;
+  text-decoration: underline;
+  transition: color 0.2s ease-in;
+  font-size: 1.5rem;
+  font-family: "Baskerville", serif;
+
+  &:hover {
+    color: gray;
+  }
+}
+
+.dates {
+  font-size: 1.5rem;
+  font-family: "Baskerville", serif;
+}
+
+.cities {
+  font-size: 1.4rem;
+  font-family: "Baskerville", serif;
+  font-weight: bold;
+}
+
+.venues {
+  font-size: 1.3rem;
+  font-style: italic;
+  font-family: "Baskerville", serif;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: white;
+  opacity: 0.5;
+  margin: 40px 0;
 }

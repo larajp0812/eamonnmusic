@@ -28,7 +28,8 @@ export default function Navbar() {
     <nav className={`${styles.navbar} ${show ? styles.show : styles.hide}`}>
       <div className={styles.inner}>
         <Link to="/" className={styles.mainLink}>
-          Eamonn Walsh
+          <span className={styles.initial}>E</span>AMONN{" "}
+          <span className={styles.initial}>W</span>ALSH
         </Link>
 
         {/* Desktop links */}

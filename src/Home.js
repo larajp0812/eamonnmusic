@@ -9,15 +9,17 @@ export default function Home() {
 
       {/* Tour dates */}
       <section className={styles.tourDates}>
-        <h2>Upcoming Shows</h2>
+        <div className={styles.headers}>UPCOMING SHOWS</div>
         <ul>
           <li>
-            <strong>28th November – Cork</strong>
+            <strong className={styles.dates}>28th November 2025 </strong>
             <br />
-            Triskel Arts Centre, Cork
+            <span className={styles.venues}>Triskel Arts Centre</span>
+            <br />
+            <span className={styles.cities}>Cork</span>
             <br />
             <a
-              href="https://www.triskelartscentre.ie/"
+              href="https://triskelarts.ticketsolve.com/ticketbooth/shows/873658613"
               target="_blank"
               rel="noreferrer"
               className={styles.bookTickets}
@@ -25,10 +27,15 @@ export default function Home() {
               Book Tickets
             </a>
           </li>
+          <div className={styles.divider} />
           <li>
-            <strong>11th December – London</strong>
+            <strong className={styles.dates}>11th December 2025</strong>
             <br />
-            Irish Cultural Centre, Hammersmith
+            <span className={styles.venues}>
+              Irish Cultural Centre, Hammersmith
+            </span>
+            <br />
+            <span className={styles.cities}>London</span>
             <br />
             <a
               href="https://www.irishculture.org/"
@@ -39,13 +46,16 @@ export default function Home() {
               Book Tickets
             </a>
           </li>
+          <div className={styles.divider} />
           <li>
-            <strong>19th December – Mitchelstown</strong>
+            <strong className={styles.dates}>19th December 2025</strong>
             <br />
-            Mitchelstown Leisure Centre
+            <span className={styles.venues}>Mitchelstown Leisure Centre</span>
+            <br />
+            <span className={styles.cities}>Mitchelstown</span>
             <br />
             <a
-              href="https://www.ticketmaster.ie/"
+              href="https://www.eventbrite.ie/e/1592394999309?aff=oddtdtcreator"
               target="_blank"
               rel="noreferrer"
               className={styles.bookTickets}
@@ -54,31 +64,6 @@ export default function Home() {
             </a>
           </li>
         </ul>
-      </section>
-
-      {/* YouTube carousel */}
-      <section className={styles.videos}>
-        <h2>Videos</h2>
-        <div className={styles.carousel}>
-          <iframe
-            src="https://www.youtube.com/embed/vYv9R8AFf8w"
-            title="Nella Fanstasia"
-            frameBorder="0"
-            allowFullScreen
-          />
-          <iframe
-            src="https://www.youtube.com/embed/nkp68jCLXvs"
-            title="Oh Holy Night"
-            frameBorder="0"
-            allowFullScreen
-          />
-          <iframe
-            src="https://www.youtube.com/embed/twi4EOEGAjI"
-            title="YouTube Video 3"
-            frameBorder="0"
-            allowFullScreen
-          />
-        </div>
       </section>
     </div>
   );

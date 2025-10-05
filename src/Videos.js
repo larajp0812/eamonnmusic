@@ -4,6 +4,8 @@ import styles from "./Videos.module.scss";
 export default function Videos() {
   return (
     <div className={styles.videos}>
+      <div className={styles.headers}>VIDEOS</div>
+      <div className={styles.divider} />
       <div className={styles.videoGrid}>
         <iframe
           src="https://www.youtube.com/embed/vYv9R8AFf8w"
@@ -26,30 +28,6 @@ export default function Videos() {
         <iframe
           src="https://www.youtube.com/embed/MCqBw4D_34U"
           title="Turning Page"
-          frameBorder="0"
-          allowFullScreen
-        />
-        <iframe
-          src="https://www.youtube.com/embed/-mIvx2p1m-c"
-          title="Jolene"
-          frameBorder="0"
-          allowFullScreen
-        />
-        <iframe
-          src="https://www.youtube.com/embed/-zxzn_JGCI8"
-          title="I've been waiting for you"
-          frameBorder="0"
-          allowFullScreen
-        />
-        <iframe
-          src="https://www.youtube.com/embed/jv_cEzPIAU4"
-          title="We dont have to take our clothes off"
-          frameBorder="0"
-          allowFullScreen
-        />
-        <iframe
-          src="https://www.youtube.com/embed/LYZOuxMEp00"
-          title="Perfect"
           frameBorder="0"
           allowFullScreen
         />
