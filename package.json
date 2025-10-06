@@ -18,7 +18,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && scp -i ./keys/bobby-test.pem -r ./build/* unify@bobby-test.uksouth.cloudapp.azure.com:/var/www/prd/eamonnwalshmusic.com/",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
