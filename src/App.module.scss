@@ -2,6 +2,16 @@
   text-align: center;
 }
 
+.appLayout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContent {
+  flex: 1;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
