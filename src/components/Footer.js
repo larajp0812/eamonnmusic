@@ -5,7 +5,6 @@ import { FaInstagram, FaYoutube } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <p>© {new Date().getFullYear()} Eamonn Walsh</p>
       <div className={styles.socials}>
         <a
           href="https://instagram.com/eamonnjwalsh"
@@ -24,6 +23,8 @@ const Footer = () => {
           <FaYoutube />
         </a>
       </div>
+      <p>© {new Date().getFullYear()} Eamonn Walsh</p>
+      <p className={styles.credit}>Website by Lara Johnson-Perkins</p>
     </footer>
   );
 };
