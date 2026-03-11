@@ -34,7 +34,7 @@ export default function Navbar() {
 
         {/* Desktop links */}
         <div className={styles.links}>
-          {/* <Link to="/tickets">Tickets</Link> */}
+          <Link to="/tickets">Tickets</Link>
           <Link to="/about">About</Link>
           <Link to="/gallery">Gallery</Link>
           <Link to="/videos">Videos</Link>
@@ -85,13 +85,11 @@ export default function Navbar() {
                 Home
               </Link>
             </li>
-            {/*
             <li>
               <Link to="/tickets" onClick={() => setMenuOpen(false)}>
                 Tickets
               </Link>
             </li>
-            */}
             <li>
               <Link to="/about" onClick={() => setMenuOpen(false)}>
                 About

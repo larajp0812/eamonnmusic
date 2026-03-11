@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./Home";
-// import Tickets from "./Tickets";
+import Tickets from "./Tickets";
 import About from "./About";
 import Gallery from "./Gallery";
 import Videos from "./Videos";
@@ -21,7 +21,7 @@ function App() {
         <main className={styles.mainContent}>
           <Routes>
             <Route path="/" element={<Home />} />
-            {/* <Route path="/tickets" element={<Tickets />} /> */}
+            <Route path="/tickets" element={<Tickets />} />
             <Route path="/about" element={<About />} />
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/videos" element={<Videos />} />

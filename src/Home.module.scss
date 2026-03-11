@@ -8,31 +8,15 @@
 }
 
 .hero {
-  position: relative;
   width: 100vw;
   height: 50vh;
   min-height: 50vh;
   margin: 0;
   padding-top: 0;
   background: url("/images/hero.jpg") no-repeat center center/cover;
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 0) 18%,
-    rgba(0, 0, 0, 0) 82%,
-    rgba(0, 0, 0, 1) 100%
-  );
 }
 
 .headers {
@@ -43,13 +27,7 @@
   margin-bottom: 30px;
 }
 
-.announcement {
-  font-size: 2rem;
-  font-style: italic;
-}
-
 .tourDates {
-  margin-top: -1.2rem;
   padding: 0.8rem 2rem;
   text-align: center;
 
